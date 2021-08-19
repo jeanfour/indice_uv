@@ -17,7 +17,7 @@
   var __eon_labels = {"uvindex":"UV Index"}; 
   chart = eon.chart({
     pubnub: __eon_pubnub,
-    channels: ["uvindex"],// indice uv
+    channels: ["uvindex"],// canal del indice uv en PubNub
     history: true,
     flow: false,
     rate: 2000,
@@ -32,8 +32,7 @@
         x: {
           label: "",
           tick: {
-            format: '%H:%M', 
-            format: '%d/%m/%Y'
+            format: '%H:%M','%d/%m/%Y'
           }
         },
         y: {
