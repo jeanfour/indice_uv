@@ -36,7 +36,7 @@ body {
 .logo img{
     width: 250px;
     height: 95%;
-    margin: 0 40px;
+    margin: 10 40px;
     margin-bottom: 7px;
     }
     
@@ -73,7 +73,7 @@ body {
     border:none;
     font-size: 30px;
     padding: 0 20px;
-    line-height: 60px;
+    line-height: 50px;
     display: none;
     cursor: pointer;
     }
@@ -131,26 +131,6 @@ body {
        padding-left: 30px;
        padding-right: 30px;
        }
-
-/*-------------------------------------------------------------------------------------------------*/
-.dropdown {
-    box-shadow: 0 0 2px #777;
-    display: none;
-    left: 0;
-    position: absolute;
-    padding: 2px;
-    z-index: 10;
-  }
-  
-  .dropdown a {
-    font-size: 12px;
-    padding: 4px;
-  }
-  
-  .dropdown.is-open {
-    display: block;
-  }
-  
 
 /*-------------------------------------------------------------------------------------------------*/
 
