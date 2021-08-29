@@ -6,23 +6,40 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" type= "text/css" href="estilos.css">
     <meta name="viewport" content="width =device-width, initial-scale=1.0">
+    <script defer src="javascript.js"></script>
+    <!--icono url-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
 
-  <div class="in-flex"> 
-  <img src="images/banner.png"style="margin: 0 auto; text-align: center; display: block" height="160" width="100%"><br>
-  <div class = "in-flex"> <h1 style="text-align:center"><span style="color:#2c3e50"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">
-    <span style="font-size:26px"><strong>Gr&aacute;fica en tiempo real de la radiaci&oacute;n ultravioleta</strong>
-    </span></span></span><span style="color:#8e44ad"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">
-      <span style="font-size:26px"><strong>&nbsp;</strong></span></span></span></h1> </div>
-   </div>
-  
-  </html>
-  </br>
+<body>
+   <header class="header">
+      <nav class= "nav">  
+        <div class= "logo"><img src = "images/logo.png"></div>
+        <button class= "toggle" aria-label="Abrir menú"><i class="fa fa-bars"></i></button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link  ">UG</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link  ">F. I. I.</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link  ">I. T.</a></li>
+        </ul>
+      </nav>       
+   </header>
+   </body>
+<br>
+   <br>
+   <br>
+   <br>
+   
+  <section class="encabezadohome">
+    <div class = "encabezado"><p>Gr&aacute;fica de la radiaci&oacute;n ultravioleta en tiempo real</p>
+    </div>
+  </section>
+</html>
 
+
+<div class="grafica">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41757885-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -45,7 +62,7 @@
     history: true,
     flow: false,
     rate: 2000,
-    limit: 24, //Cantidad de registros de valores en la grafica
+    limit: 20, //Cantidad de registros de valores en la grafica
     generate: {
       bindto: "#chart",
       data: {
@@ -56,18 +73,20 @@
         x: {
           label: "",
           tick: {
-           format: '%H:%M - %d:%m/%y'
+           format: '%H:%M - %b %e'
           }
         },
         y: {
           label: ""
-        }
+          
+          }
       },
       grid: {
         x: {
           show: true 
         },
         y: {
+
           show: true 
         }
       },
@@ -91,7 +110,7 @@
       };
     }
   });
-  </script>
+  </script></div>
   </br>
 
 <html>
@@ -102,6 +121,10 @@
   </head>
   <body>
     
+
+<div class="niveluv"><img src ="images/indiceuv.png" alt=""></div>
+
+<br>
         <div id="carousel1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
@@ -132,10 +155,7 @@
             </ol>
             
         </div>
-      
-      
-      
-      
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -146,6 +166,5 @@
         $('.carousel').carousel();
     </script>  
   
-
 </body>
 </html>

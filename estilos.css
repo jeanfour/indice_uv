@@ -1,7 +1,7 @@
-*, *::before, *::after {
-    padding: 0%;
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
     margin: 0;
-    outline: 0;
     box-sizing: border-box;
 }
 
@@ -10,15 +10,205 @@ body {
     background-color: seashell;
     }
 
-.carousel-inner img {
+.header {
+    background-color: #1C1F21;
     width: 100%;
-    height: auto;
-   padding: 20px;
-}
+    height: 80px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    }
 
-.in-flex img{
-    max-width: 100%;
-    height: auto;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    }
 
+.nav-link{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+    }
+
+.logo img{
+    width: 250px;
+    height: 95%;
+    margin: 0 40px;
+    margin-bottom: 7px;
+    }
+    
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style:none;
+    }    
+
+.nav-menu-item {
+    font-size: 25px;
+    margin: 0 10px;
+    padding-top: 20px;
+    line-height: 25px;
+    text-transform:uppercase;
+    width: max-content;
+    }
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+    }
+
+.nav-menu-link:hover,
+.nav-menu-link:active {
+    color: rgb(252, 250, 250);
+    background-color: rgb(228, 110, 13);
+    transition: 0.5s;
+    }
+
+.toggle{
+    color:rgb(255, 255, 255);
+    background:none;
+    border:none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+    }
+
+/*-------------------------------------------------------------------------------------------------*/
+
+.encabezadohome {
+        display:block;
+        }
+    
+.banner img{
+        width: 100%; /*ancho*/
+        height: auto; /*largo*/
+        margin: 0;
+        }
+        
+.encabezado {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(240, 236, 236);
+        background-color: rgba(25, 25, 112);
+        border-radius: 10px; 
+    
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 1pt;
+        
+        }
+    
+.grafica {
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 5x;
+        }
+    
+.niveluv img {
+        width: 100%;
+        height: auto;
+        padding-top: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 40px;    
+        }
+    
+.carousel-inner img {
+        width: 100%;
+        height: auto;
+       padding-left: 30px;
+       padding-right: 30px;
+       }
+
+/*-------------------------------------------------------------------------------------------------*/
+.dropdown {
+    box-shadow: 0 0 2px #777;
+    display: none;
+    left: 0;
+    position: absolute;
+    padding: 2px;
+    z-index: 10;
+  }
+  
+  .dropdown a {
+    font-size: 12px;
+    padding: 4px;
+  }
+  
+  .dropdown.is-open {
+    display: block;
+  }
+  
+
+/*-------------------------------------------------------------------------------------------------*/
+
+@media (max-width:768px){
+    body {
+        margin: 70px;
+        }
+    
+    .header {
+        height: 80px;
+        }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items:center;
+        position: fixed;
+        margin: 0;
+        background-color: rgb(16, 62, 88);
+        left: 0;
+        top: 80px;
+        width: 100%;
+        max-height: 28%;
+        padding: 10px 0;
+        border-end-start-radius: 20px;
+        border-end-end-radius: 20px;
+
+        height: calc(100% - 80px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.4s;
+        }    
+    
+    .nav-menu-item {
+        line-height: 10px;
+        }
+    
+    .nav-menu-link {
+        padding: 8px 12px;
+        border-radius: 10px;
+        }
+    
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: rgb(216, 107, 6);
+        transition: 0.5s;
+        }
+    
+    .toggle{
+        display: block;
+        }
+    
+    .nav-menu_visible{
+        left: 0;
+        }
+
+    .nav-toggle:focus:not(:focus-visible){
+    outline: none;
+        }
 }
