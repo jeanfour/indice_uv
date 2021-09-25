@@ -152,7 +152,7 @@ body {
         margin-right: auto;
         }
 
-.carousel-inner img {
+.carousel-inner img{
         height: auto;
         width: 85%;
         max-width: 1050px;
@@ -163,6 +163,17 @@ body {
         margin-right: auto;
         }
 
+.carousel-control-prev {
+    padding-left: 130px;
+    }
+
+.carousel-control-next {
+        padding-right: 130px;
+        }
+    
+.carousel-indicators {
+    padding-bottom: 30px;
+}  
 
 /*-------------------------------------------------------------------------------------------------*/
 
