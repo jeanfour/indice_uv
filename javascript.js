@@ -9,5 +9,5 @@ if(navmenu.classList.contains("nav-menu_visible")){
 } else {
     toggle.setAttribute("arial-label","Abrir menú");
 }
-
 });
+

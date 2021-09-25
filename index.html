@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <title>Indice UV ¡Now!</title>
-    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">    <title>Indice UV ¡Now!</title>
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type= "text/css" href="estilos.css">
@@ -17,23 +16,19 @@
 <body>
    <header class="header">
       <nav class= "nav">  
-        <div class= "logo"><img src = "images/logo.png"></div>
+        <div class= "logo"><img src = "images/icono.png"><p>Índice UV<br>¡Now!</p></div>
         <button class= "toggle" aria-label="Abrir menú"><i class="fa fa-bars"></i></button>
         <ul class="nav-menu">
           <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link  ">UG</a></li>
-          <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link  ">F. I. I.</a></li>
+          <li class="nav-menu-item"><a href="www.facebook.com" class="nav-menu-link nav-link  ">Noticias</a></li>
           <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link  ">I. T.</a></li>
         </ul>
       </nav>       
    </header>
    </body>
-<br>
-   <br>
-   <br>
-   <br>
-   
+ 
   <section class="encabezadohome">
-    <div class = "encabezado"><p>Gr&aacute;fica de la radiaci&oacute;n ultravioleta en tiempo real</p>
+    <div class = "encabezado"><p>Gráfica de la radiación ultravioleta en tiempo real</p>
     </div>
   </section>
 </html>
@@ -73,7 +68,7 @@
         x: {
           label: "",
           tick: {
-           format: '%H:%M - %b %e'
+           format: '%H:%M %b%e'
           }
         },
         y: {
@@ -123,15 +118,27 @@
     
 
 <div class="niveluv"><img src ="images/indiceuv.png" alt=""></div>
-
 <br>
+<h1 class="info">Informate</h1>
+
+ <div class="informacion"><h1 class="contenido"><p><b>¿Qué es la radiación ultravioleta?</b></p>
+  <p>La radiación ultravioleta (UV) es una forma de radiación no ionizante que es emitida por el sol y 
+  fuentes artificiales, como las camas bronceadoras. Aunque ofrece algunos beneficios a las personas, 
+  como la producción de vitamina D, también puede causar riesgos para la salud. Como lo es la exposición prolongada 
+  a los rayos ultravioletas, que predispone al posible desarrollo de cáncer de piel.</p> 
+ 
+ <p>Existen tres tipos de radiacion ultravioleta que son: La UVA, la cual no absorbida por la capa de ozono. La UVB, 
+ mayormente absorbida por la capa de ozono, pero alguna cantidad llega a la superficie de la Tierra. Por último la UVC, 
+ que es completamente absorbida por la capa de ozono y la atmósfera.</p></h1><img src="images/u1.jpg"alt=""></div>
+
+ <br>
         <div id="carousel1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
               <div align="center"><img src="images/r0.png" alt=""></div>
             </div>
             <div class="carousel-item">
-              <div align="center"><img src="images/r1.png" alt=""></div>
+              <div align="center"><img src="images/i1.png" alt=""></div>
             </div>
             <div class="carousel-item">
               <div align="center"><img src="images/r2.png" alt=""></div>
@@ -158,9 +165,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqV
+    gRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2e
+    T0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgy
+    d0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <script>
         $('.carousel').carousel();
